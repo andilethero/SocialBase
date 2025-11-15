@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Message</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body class="bg-pink-50 font-poppins">
+    <div id="floating-hearts"></div>
+    <div class="min-h-screen flex flex-col justify-center items-center px-4">
+        <div class="max-w-md w-full bg-white rounded-2xl shadow-xl p-8 text-center relative overflow-hidden">
+            <div class="absolute -top-10 -right-10 w-32 h-32 rounded-full bg-pink-200 opacity-30"></div>
+            <div class="absolute -bottom-16 -left-16 w-40 h-40 rounded-full bg-yellow-100 opacity-30"></div>
+            
+            <div class="relative mb-6">
+                <img src="Mil .jpg" alt="Birthday Girl" class="w-32 h-32 rounded-full object-cover mx-auto border-4 border-pink-300 shadow-lg">
+                <div class="absolute -bottom-2 -right-2 w-10 h-10 rounded-full bg-pink-500 flex items-center justify-center">
+                    <i data-feather="heart" class="text-white w-5 h-5"></i>
+                </div>
+            </div>
+            
+            <h1 class="text-3xl font-bold text-pink-500 mb-4 font-dancing">Happy Birthday, Beautiful! 💐</h1>
+            
+            <p class="text-gray-700 mb-6 leading-relaxed">
+                To the most amazing person I know maybe a little bit anoyying, with love of couse... - may your birthday be as wonderful as you are! You light up every room you walk into and bring so much joy to everyone around you. Today, we celebrate YOU and all the incredible things that make you special!
+            </p>
+            
+            <div class="flex justify-center space-x-4 mb-8">
+                <div class="w-10 h-10 rounded-full bg-pink-200 flex items-center justify-center animate-bounce">
+                    <i data-feather="star" class="text-pink-500"></i>
+                </div>
+                <div class="w-10 h-10 rounded-full bg-yellow-100 flex items-center justify-center animate-bounce" style="animation-delay: 0.2s">
+                    <i data-feather="star" class="text-yellow-400"></i>
+                </div>
+                <div class="w-10 h-10 rounded-full bg-pink-200 flex items-center justify-center animate-bounce" style="animation-delay: 0.4s">
+                    <i data-feather="star" class="text-pink-500"></i>
+                </div>
+            </div>
+            
+            <a href="questions.html" class="inline-block bg-pink-500 hover:bg-pink-600 text-white font-medium rounded-full px-8 py-3 transition-all duration-300 transform hover:scale-105 shadow-lg">
+                Play Birthday Quiz! <i data-feather="arrow-right" class="inline ml-2"></i>
+            </a>
+        </div>
+    </div>
+    
+    <script src="components/hearts.js"></script>
+    <script src="script.js"></script>
+    <script>feather.replace();</script>
+</body>
+</html>
